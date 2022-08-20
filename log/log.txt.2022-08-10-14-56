@@ -1,0 +1,2 @@
+2022-08-10 14:56:35 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-10 14:56:35 INFO  StoreApplication:61 - Started StoreApplication in 232.399 seconds (JVM running for 233.193)

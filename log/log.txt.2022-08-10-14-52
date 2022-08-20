@@ -1,0 +1,4 @@
+2022-08-10 14:52:43 INFO  StoreApplication:55 - Starting StoreApplication using Java 1.8.0_111 on DESKTOP-6P0S8NI with PID 8404 (E:\course\INFO\target\classes started by 兔子 in E:\course\INFO)
+2022-08-10 14:52:43 INFO  StoreApplication:637 - No active profile set, falling back to default profiles: default
+2022-08-10 14:52:44 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-08-10 14:52:44 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1015 ms

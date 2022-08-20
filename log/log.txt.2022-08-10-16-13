@@ -1,0 +1,14 @@
+2022-08-10 16:13:01 INFO  UserController:62 - 需要查询的名字为:null
+2022-08-10 16:13:22 INFO  UserController:62 - 需要查询的名字为:null
+2022-08-10 16:13:55 INFO  StoreApplication:55 - Starting StoreApplication using Java 1.8.0_111 on DESKTOP-6P0S8NI with PID 18340 (E:\course\INFO\target\classes started by 兔子 in E:\course\INFO)
+2022-08-10 16:13:55 INFO  StoreApplication:637 - No active profile set, falling back to default profiles: default
+2022-08-10 16:13:56 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-08-10 16:13:56 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1007 ms
+2022-08-10 16:13:57 INFO  DefaultSecurityFilterChain:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b200971, org.springframework.security.web.context.SecurityContextPersistenceFilter@66273da0, org.springframework.security.web.header.HeaderWriterFilter@3d904e9c, org.springframework.web.filter.CorsFilter@1a2bcd56, org.springframework.security.web.authentication.logout.LogoutFilter@4eba373c, com.cy.store.interceptor.JwtAuthenticationTokenFilter@68d7a2df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1229a2b7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60f70249, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59dc36d4, org.springframework.security.web.session.SessionManagementFilter@38d17d80, org.springframework.security.web.access.ExceptionTranslationFilter@76563d26, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46963479]
+2022-08-10 16:13:57 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-10 16:13:57 INFO  StoreApplication:61 - Started StoreApplication in 2.102 seconds (JVM running for 2.776)
+2022-08-10 16:13:59 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-08-10 16:13:59 INFO  DispatcherServlet:547 - Completed initialization in 1 ms
+2022-08-10 16:13:59 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-08-10 16:13:59 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-08-10 16:13:59 INFO  UserController:62 - 需要查询的名字为:null

@@ -1,0 +1,17 @@
+2022-08-20 15:30:04 INFO  StoreApplication:55 - Starting StoreApplication using Java 1.8.0_111 on DESKTOP-6P0S8NI with PID 15516 (E:\course\INFO\target\classes started by 兔子 in E:\course\INFO)
+2022-08-20 15:30:04 INFO  StoreApplication:637 - No active profile set, falling back to default profiles: default
+2022-08-20 15:30:04 INFO  RepositoryConfigurationDelegate:262 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-08-20 15:30:04 INFO  RepositoryConfigurationDelegate:132 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-20 15:30:04 INFO  RepositoryConfigurationDelegate:201 - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-08-20 15:30:05 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-08-20 15:30:05 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1121 ms
+2022-08-20 15:30:05 INFO  AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: private static com.cy.store.util.RedisCache com.cy.store.interceptor.JwtAuthenticationTokenFilter.redisCache
+2022-08-20 15:30:05 INFO  AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: public static org.springframework.data.redis.core.RedisTemplate com.cy.store.util.RedisCache.redisTemplate
+2022-08-20 15:30:06 INFO  DefaultSecurityFilterChain:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67cffead, org.springframework.security.web.context.SecurityContextPersistenceFilter@1624775, org.springframework.security.web.header.HeaderWriterFilter@4faf104, org.springframework.web.filter.CorsFilter@214beff9, org.springframework.security.web.authentication.logout.LogoutFilter@24c8d8be, com.cy.store.interceptor.JwtAuthenticationTokenFilter@1ff15a50, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@235b4cb8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ed15347, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@217c23ce, org.springframework.security.web.session.SessionManagementFilter@10e5bf9c, org.springframework.security.web.access.ExceptionTranslationFilter@49fb0bbd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4735d6e5]
+2022-08-20 15:30:06 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-20 15:30:06 INFO  StoreApplication:61 - Started StoreApplication in 2.629 seconds (JVM running for 3.499)
+2022-08-20 15:30:07 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-08-20 15:30:07 INFO  DispatcherServlet:547 - Completed initialization in 1 ms
+2022-08-20 15:30:08 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-08-20 15:30:08 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-08-20 15:30:08 INFO  UserDetailsServiceImpl:33 - 查询到的登录用户名字User{uid=20, userName='szx', passWord='$2a$10$.dN2J49Sr7m8UF2iI4TTP.sEoxgpOaM13xZ8CG6HvpFKUgkMzRJw6', salt='null', phone='null', email='null', gender=null, avatar='null', isDelete=0}

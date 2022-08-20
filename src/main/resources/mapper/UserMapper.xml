@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cy.store.mapper.UserMapper">
+    <!--自定义结果集映射
+    uid主键不省略
+    -->
+    <resultMap id="UserEntityMap" type="com.cy.store.entity.User">
+        <result column="uid" property="uid"></result>
+        <result column="is_delete" property="isDelete"></result>
+        <result column="created_user" property="createdUser"></result>
+        <result column="created_time" property="createdTime"></result>
+        <result column="modified_user" property="modifiedUser"></result>
+        <result column="modified_time" property="modifiedTime"></result>
+    </resultMap>
+    <!--
+    useGeneratedKeys通过uid自增
+    keyProperty
+    -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="uid">
+        insert into sys_user(
+            uid,username,password,salt,phone,email ,gender,avatar,is_delete,
+            created_user,created_time,modified_user,modified_time
+        ) values (
+            #{uid},#{userName},#{passWord},#{salt},#{phone},#{email},#{gender},#{avatar},#{isDelete},
+            #{createdUser},#{createdTime},#{modifiedUser},#{modifiedTime}
+        )
+    </insert>
+    <select id="findByUsername" resultMap="UserEntityMap">
+        select * from sys_user where username=#{userName}
+    </select>
+    <!--设置权限-->
+    <insert id="setUserPermission">
+        insert into sysy_user_role(
+            user_id,role_id
+        )values (
+            #{userId},#{roleId}
+        )
+    </insert>
+    <!--查询所有账号-->
+    <select id="findAll" resultMap="UserEntityMap">
+        select * from sys_user
+        <where>
+        <if test="userName != null">
+        and username LIKE CONCAT('%',#{userName},'%')
+        </if>
+        and is_delete=0
+        </where>
+    </select>
+<!--    &lt;!&ndash;搜索用户&ndash;&gt;-->
+<!--    <select id="findUserByUserName" resultMap="UserEntityMap">-->
+<!--        SELECT * FROM `sys_user` where username LIKE CONCAT('%',#{username},'%')-->
+<!--    </select>-->
+    <!--删除用户-->
+    <update id="deleteUserByUid">
+        update sys_user set is_delete=1 where uid=#{uid}
+    </update>
+    <!--通过uid修改用户信息
+   -->
+    <update id="updateUserInfoByUid">
+        UPDATE
+        sys_user
+        SET
+        <if
+                test="userName != null">username = #{userName},
+        </if>
+        <if
+                test="passWord != null">password = #{passWord},
+        </if>
+        <if
+                test="phone != null">phone = #{phone},
+        </if>
+        <if
+                test="email != null">email = #{email},
+        </if>
+        <if
+                test="gender != null">gender = #{gender},
+        </if>
+        <if
+                test="avatar != null">avatar = #{avatar},
+        </if>
+        modified_user = #{modifiedUser},
+        modified_time = #{modifiedTime}
+        WHERE
+        uid = #{uid} and is_delete=0
+    </update>
+    <!--根据用户uid查询用户数据-->
+    <select id="findByUid" resultMap="UserEntityMap">
+        select * from sys_user where uid=#{uid} and is_delete=0
+    </select>
+
+
+
+    <!--修改密码-->
+    <update id="updatePasswordByUid">
+        update sys_user set  password=#{password},
+        modified_user=#{modifiedUser},
+        modified_time=#{modifiedTime}  where uid=#{uid};
+    </update>
+
+
+    <!-- 根据uid更新用户个人资料：Integer updateInfoByUid(User user) -->
+
+    <!-- 根据uid更新用户的头像
+	 Integer updateAvatarByUid(
+		@Param("uid") Integer uid,
+		@Param("avatar") String avatar,
+		@Param("modifiedUser") String modifiedUser,
+		@Param("modifiedTime") Date modifiedTime) -->
+    <update id="updateAvatarByUid">
+	UPDATE
+		t_user
+	SET
+		avatar = #{avatar},
+		modified_user = #{modifiedUser},
+		modified_time = #{modifiedTime}
+	WHERE
+		uid = #{uid}
+</update>
+</mapper>

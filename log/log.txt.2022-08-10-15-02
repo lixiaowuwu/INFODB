@@ -1,0 +1,14 @@
+2022-08-10 15:02:11 INFO  StoreApplication:55 - Starting StoreApplication using Java 1.8.0_111 on DESKTOP-6P0S8NI with PID 13288 (E:\course\INFO\target\classes started by 兔子 in E:\course\INFO)
+2022-08-10 15:02:11 INFO  StoreApplication:637 - No active profile set, falling back to default profiles: default
+2022-08-10 15:02:12 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-08-10 15:02:12 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 909 ms
+2022-08-10 15:02:12 INFO  DefaultSecurityFilterChain:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4760f169, org.springframework.security.web.context.SecurityContextPersistenceFilter@290d10ef, org.springframework.security.web.header.HeaderWriterFilter@60cf62ad, org.springframework.web.filter.CorsFilter@261ea657, org.springframework.security.web.authentication.logout.LogoutFilter@53ec2968, com.cy.store.interceptor.JwtAuthenticationTokenFilter@35c12c7a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@644ded04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ba359bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@658255aa, org.springframework.security.web.session.SessionManagementFilter@33899f7a, org.springframework.security.web.access.ExceptionTranslationFilter@46185a1b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6eb17ec8]
+2022-08-10 15:02:12 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-10 15:02:12 INFO  StoreApplication:61 - Started StoreApplication in 1.901 seconds (JVM running for 2.516)
+2022-08-10 15:02:44 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-08-10 15:02:44 INFO  DispatcherServlet:547 - Completed initialization in 0 ms
+2022-08-10 15:02:44 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-08-10 15:02:44 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-08-10 15:02:44 INFO  UserController:71 - 需要查询的名字为:root
+2022-08-10 15:02:44 INFO  UserServiceImpl:90 - 循环取出模糊查询用户集合
+2022-08-10 15:02:52 INFO  UserController:71 - 需要查询的名字为:rot

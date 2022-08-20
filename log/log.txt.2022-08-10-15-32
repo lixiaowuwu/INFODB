@@ -1,0 +1,2 @@
+2022-08-10 15:32:01 INFO  UserController:62 - 需要查询的名字为:roo
+2022-08-10 15:32:07 WARN  DefaultHandlerExceptionResolver:208 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.cy.store.util.JsonResult com.cy.store.controller.UserController.findAll(java.util.Map) throws java.io.UnsupportedEncodingException]

@@ -1,0 +1,12 @@
+2022-08-10 16:17:42 INFO  StoreApplication:55 - Starting StoreApplication using Java 1.8.0_111 on DESKTOP-6P0S8NI with PID 14248 (E:\course\INFO\target\classes started by 兔子 in E:\course\INFO)
+2022-08-10 16:17:42 INFO  StoreApplication:637 - No active profile set, falling back to default profiles: default
+2022-08-10 16:17:44 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-08-10 16:17:44 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1245 ms
+2022-08-10 16:17:44 INFO  DefaultSecurityFilterChain:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c3a0032, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fa23c, org.springframework.security.web.header.HeaderWriterFilter@e5cbff2, org.springframework.web.filter.CorsFilter@7ceb4478, org.springframework.security.web.authentication.logout.LogoutFilter@65b97f47, com.cy.store.interceptor.JwtAuthenticationTokenFilter@7fdab70c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@433348bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43045f9f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25ad4f71, org.springframework.security.web.session.SessionManagementFilter@6920614, org.springframework.security.web.access.ExceptionTranslationFilter@2127e66e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18d910b3]
+2022-08-10 16:17:44 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-10 16:17:44 INFO  StoreApplication:61 - Started StoreApplication in 2.58 seconds (JVM running for 3.302)
+2022-08-10 16:17:49 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-08-10 16:17:49 INFO  DispatcherServlet:547 - Completed initialization in 1 ms
+2022-08-10 16:17:49 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-08-10 16:17:49 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-08-10 16:17:49 INFO  UserController:62 - 需要查询的名字为:null

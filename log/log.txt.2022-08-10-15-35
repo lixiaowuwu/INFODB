@@ -1,0 +1,13 @@
+2022-08-10 15:35:26 INFO  StoreApplication:55 - Starting StoreApplication using Java 1.8.0_111 on DESKTOP-6P0S8NI with PID 13900 (E:\course\INFO\target\classes started by 兔子 in E:\course\INFO)
+2022-08-10 15:35:26 INFO  StoreApplication:637 - No active profile set, falling back to default profiles: default
+2022-08-10 15:35:27 INFO  TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+2022-08-10 15:35:27 INFO  ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 934 ms
+2022-08-10 15:35:27 INFO  DefaultSecurityFilterChain:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30364216, org.springframework.security.web.context.SecurityContextPersistenceFilter@7903d448, org.springframework.security.web.header.HeaderWriterFilter@37e0292a, org.springframework.web.filter.CorsFilter@38bb9d7a, org.springframework.security.web.authentication.logout.LogoutFilter@21079a12, com.cy.store.interceptor.JwtAuthenticationTokenFilter@1e8ab90f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42ea287, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@336206d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78d6447a, org.springframework.security.web.session.SessionManagementFilter@7c36db44, org.springframework.security.web.access.ExceptionTranslationFilter@4ee6291f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@582a764a]
+2022-08-10 15:35:28 INFO  TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-10 15:35:28 INFO  StoreApplication:61 - Started StoreApplication in 2.031 seconds (JVM running for 2.666)
+2022-08-10 15:35:32 INFO  DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2022-08-10 15:35:32 INFO  DispatcherServlet:547 - Completed initialization in 2 ms
+2022-08-10 15:35:32 INFO  HikariDataSource:110 - HikariPool-1 - Starting...
+2022-08-10 15:35:32 INFO  HikariDataSource:123 - HikariPool-1 - Start completed.
+2022-08-10 15:35:32 WARN  DefaultHandlerExceptionResolver:208 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.cy.store.util.JsonResult com.cy.store.controller.UserController.findAll(java.util.Map) throws java.io.UnsupportedEncodingException]
+2022-08-10 15:35:38 INFO  UserController:65 - 需要查询的名字为:null
