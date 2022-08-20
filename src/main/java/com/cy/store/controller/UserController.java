@@ -97,6 +97,7 @@ public class UserController extends BaseController{
     public JsonResult findByUid(@RequestBody Map map){
         return userService.findByUid((int)map.get("uid"));
     }
+    //测试一下github
 //    //名称搜索
 //    @RequestMapping("/findUserByUserName")
 //    @PreAuthorize("hasAnyAuthority('root')")
